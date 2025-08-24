@@ -18,3 +18,4 @@ public class Triangle {
         System.out.printf("The length of the hypotenuse is: %.2f\n", hypotenuse);
     }
 }
+
