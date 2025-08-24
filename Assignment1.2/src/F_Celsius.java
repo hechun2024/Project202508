@@ -13,3 +13,4 @@ public class F_Celsius {
         System.out.printf("Temperature in Celsius: %.1f\n", celsius);
     }
 }
+
