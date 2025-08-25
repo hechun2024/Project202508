@@ -17,9 +17,11 @@ public class measures {
 
         // calculate leiviskä
         int leiviska = (int)(grams / gramsPerLeiviska);
+        grams %= gramsPerLeiviska; //get remainder: grams = grams % gramsPerLeiviska;
 
         // calculate naula
         int naula = (int)(grams / gramsPerNaula);
+        grams %= gramsPerNaula;
 
         // calculate luoti
         double luoti = grams / gramsPerLuoti;
