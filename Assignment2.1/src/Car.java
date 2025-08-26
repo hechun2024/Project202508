@@ -18,7 +18,7 @@ public class Car {
         this.speed = speed;
     }
 
-  
+
     public void accelerate() {
         if (gasolineLevel > 0)
             speed += 10;
