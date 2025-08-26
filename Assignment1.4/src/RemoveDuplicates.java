@@ -26,8 +26,9 @@ public class RemoveDuplicates {
         int[] newArr = new int[n];  // 新数组，长度和原数组一样（可能不会完全填满）
         int newSize = 0;
 
+        //logic of check duplicates
         for (int i = 0; i < n; i++) {
-            boolean found = false; //未发现重复
+            boolean found = false; //假设未发现重复
             for (int j = 0; j < newSize; j++) {
                 if (arr[i] == newArr[j]) {
                     found = true;
