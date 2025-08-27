@@ -4,7 +4,6 @@ public class GroceryListManager3 {
     private HashMap<String, Double> costs = new HashMap<>();
     private HashMap<String, String> categories = new HashMap<>();
 
-    // add item with cost and category
     public void addItem(String item, double cost, String category) {
         if (costs.containsKey(item)) {
             System.out.println(item + " already exists.");
@@ -15,7 +14,6 @@ public class GroceryListManager3 {
         }
     }
 
-    // display by category
     public void displayByCategory(String category) {
         System.out.println("Items in category " + category + ":");
         int i = 1;
@@ -28,5 +26,15 @@ public class GroceryListManager3 {
         if (i == 1) {
             System.out.println("No items found.");
         }
+    }
+
+    // main for testing
+    public static void main(String[] args) {
+        GroceryListManager3 manager = new GroceryListManager3();
+        manager.addItem("Apples", 3.5, "Fruits");
+        manager.addItem("Milk", 2.0, "Dairy");
+        manager.addItem("Bread", 2.5, "Bakery");
+        manager.displayByCategory("Dairy");
+        manager.displayByCategory("Fruits");
     }
 }

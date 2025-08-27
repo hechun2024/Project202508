@@ -15,7 +15,6 @@ public class GroceryListManager4 {
 
     private HashMap<String, Item> groceryList = new HashMap<>();
 
-    // add item with cost, category, quantity
     public void addItem(String item, double cost, String category, int quantity) {
         if (groceryList.containsKey(item)) {
             System.out.println(item + " already exists.");
@@ -25,7 +24,6 @@ public class GroceryListManager4 {
         }
     }
 
-    // update quantity
     public void updateQuantity(String item, int newQuantity) {
         if (groceryList.containsKey(item)) {
             groceryList.get(item).quantity = newQuantity;
@@ -35,7 +33,6 @@ public class GroceryListManager4 {
         }
     }
 
-    // display available items
     public void displayAvailableItems() {
         System.out.println("Available items:");
         int i = 1;
@@ -51,7 +48,6 @@ public class GroceryListManager4 {
         }
     }
 
-    // display by category
     public void displayByCategory(String category) {
         System.out.println("Items in category " + category + ":");
         int i = 1;
@@ -67,7 +63,6 @@ public class GroceryListManager4 {
         }
     }
 
-    // calculate total cost (price * quantity)
     public double calculateTotalCost() {
         double total = 0;
         for (Item it : groceryList.values()) {
@@ -75,5 +70,21 @@ public class GroceryListManager4 {
         }
         System.out.println("Total cost = $" + total);
         return total;
+    }
+
+    // main for testing
+    public static void main(String[] args) {
+        GroceryListManager4 manager = new GroceryListManager4();
+        manager.addItem("Apples", 3.5, "Fruits", 5);
+        manager.addItem("Milk", 2.0, "Dairy", 2);
+        manager.addItem("Bread", 2.5, "Bakery", 0);
+
+        manager.displayAvailableItems();
+        manager.calculateTotalCost();
+        manager.displayByCategory("Dairy");
+
+        manager.updateQuantity("Apples", 10);
+        manager.displayAvailableItems();
+        manager.calculateTotalCost();
     }
 }

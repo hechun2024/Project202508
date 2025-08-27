@@ -3,7 +3,6 @@ import java.util.ArrayList;
 public class GroceryListManager1 {
     private ArrayList<String> groceryList = new ArrayList<>();
 
-    // add item
     public void addItem(String item) {
         if (groceryList.contains(item)) {
             System.out.println(item + " is already in the list.");
@@ -13,7 +12,6 @@ public class GroceryListManager1 {
         }
     }
 
-    // remove item
     public void removeItem(String item) {
         if (groceryList.remove(item)) {
             System.out.println(item + " removed.");
@@ -22,7 +20,6 @@ public class GroceryListManager1 {
         }
     }
 
-    // display list
     public void displayList() {
         if (groceryList.isEmpty()) {
             System.out.println("The list is empty.");
@@ -34,10 +31,20 @@ public class GroceryListManager1 {
         }
     }
 
-    // check item
     public boolean checkItem(String item) {
         boolean found = groceryList.contains(item);
         System.out.println("Is " + item + " in the list? " + found);
         return found;
+    }
+
+    // main for testing
+    public static void main(String[] args) {
+        GroceryListManager1 manager = new GroceryListManager1();
+        manager.addItem("Apples");
+        manager.addItem("Milk");
+        manager.displayList();
+        manager.checkItem("Bread");
+        manager.removeItem("Milk");
+        manager.displayList();
     }
 }
