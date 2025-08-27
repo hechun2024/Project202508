@@ -132,3 +132,10 @@ class CarDriver {
         System.out.println("Cruise control OFF");
     }
 }
+
+
+
+
+//Why modify CarDriver first?
+//Because CarDriver is for testing Car.
+//By writing CarDriver first, we see what methods Car needs and avoid extra code.
