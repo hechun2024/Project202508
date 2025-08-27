@@ -10,7 +10,7 @@ public class Car {
         gasolineLevel = 0;
         this.typeName = typeName;
     }
-
+// task 2
     // additional constructor with gasoline tank capacity and speed arguments.
     public Car(String typeName, double gasolineLevel, double speed) {
         this.typeName = typeName;
@@ -18,7 +18,7 @@ public class Car {
         this.speed = speed;
     }
 
-
+/// //
     public void accelerate() {
         if (gasolineLevel > 0)
             speed += 10;

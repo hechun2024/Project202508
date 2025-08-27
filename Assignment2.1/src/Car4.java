@@ -13,8 +13,8 @@ public class Car4 {
         this.typeName = typeName;
         this.speed = 0;
         this.gasolineLevel = 100; // start full tank for simplicity
-        this.cruiseOn = false;
-        this.targetSpeed = 0;
+        this.cruiseOn = false; //
+        this.targetSpeed = 0;  //
     }
 
     public Car4(String typeName, double gasolineLevel, double speed) {
@@ -25,6 +25,8 @@ public class Car4 {
         this.targetSpeed = 0;
     }
 
+
+    //task4
     // ---- Cruise control methods ----
     public boolean setCruiseSpeed(double target) {
         if (target >= MIN_SPEED && target <= MAX_SPEED) {
