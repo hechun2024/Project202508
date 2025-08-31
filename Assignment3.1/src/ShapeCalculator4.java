@@ -2,7 +2,7 @@
 
 public class ShapeCalculator4 {
     public static void main(String[] args) {
-        Shape4[] shapes = new Shape4[3];
+        Shape4[] shapes = new Shape4[3];      //array
         shapes[0] = new Circle4("Red", 5.0);
         shapes[1] = new Rectangle4("Blue", 4.0, 6.0);
         shapes[2] = new Triangle4("Green", 3.0, 8.0);
