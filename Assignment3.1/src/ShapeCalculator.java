@@ -15,14 +15,14 @@ public class ShapeCalculator {
     }
 }
 
-// 基类
+// superclass
 class Shape {
     public double calculateArea() {
         return 0.0;
     }
 }
 
-// 子类 Circle
+// subclass Circle
 class Circle extends Shape {
     private double radius;
 
@@ -36,7 +36,7 @@ class Circle extends Shape {
     }
 }
 
-// 子类 Rectangle
+// subclass Rectangle
 class Rectangle extends Shape {
     private double width;
     private double height;
@@ -52,7 +52,7 @@ class Rectangle extends Shape {
     }
 }
 
-// 子类 Triangle
+// subclass Triangle
 class Triangle extends Shape {
     private double base;
     private double height;
