@@ -25,7 +25,7 @@ public class Book {
         return year;
     }
 
-    //print method（toString() is a method in Java)
+    //print method（toString() is a method in Java:打印内存地址，所以要重写)
     @Override
     public String toString(){
         return "Title:" + title + ", Author:"+  author +", Year:"+ year;

@@ -3,7 +3,7 @@
 import java.util.ArrayList;
 
 public class Library {
-    private ArrayList<Book> books = new ArrayList<>();
+    private ArrayList<Book> books = new ArrayList<>();  //hidden constructor by java
 
     //add book
     public void addBook(Book book){
