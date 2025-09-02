@@ -110,3 +110,4 @@ public class VehicleDemo4 {
         ((AbstractVehicle4)eCar).charge();
     }
 }
+
