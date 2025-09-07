@@ -54,8 +54,8 @@ public class Task3 {
 
     public static void main(String[] args) {
         Enrollment enrollment = new Enrollment(
-                new Student(1, "Alice", 21),
-                new Course("CS101", "Intro to Java", "Dr. Smith"),
+                new Student(1, "Anna", 25),
+                new Course("TX2024", "OOP-Java", "Jarkko"),
                 new Date().toString()
         );
 
