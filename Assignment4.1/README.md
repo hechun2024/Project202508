@@ -24,3 +24,16 @@ public class Calculator {
         return value;
     }
 }
+```
+# Explanation 
+
+Field value: stores the current sum of all numbers added.
+
+Method reset(): sets the total back to zero.
+
+Method add(int number): adds a positive integer to the total. If the input is negative, an IllegalArgumentException is thrown.
+
+Method getValue(): returns the current total stored in the calculator.
+
+This design follows the MVC pattern, where the Calculator class acts as the Model.
+It does not handle user interface but only the logic of calculation.
