@@ -31,3 +31,4 @@ public class Calculator {
         System.out.println("Current value: " + calc.getValue()); // should print 35
     }
 }
+
