@@ -24,3 +24,4 @@ public class Test {
         System.out.println(p2.name + " - " + p2.age);
     }
 }
+
