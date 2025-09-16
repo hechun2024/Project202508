@@ -1,0 +1,13 @@
+/*  全局字体和大小 */
+.root {
+    -fx-font-family: "Sans-Serif";
+    -fx-font-size: 14px;
+}
+
+/*  按钮样式 */
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-padding: 10px;
+    -fx-background-radius: 5px;
+}
