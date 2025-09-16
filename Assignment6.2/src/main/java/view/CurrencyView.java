@@ -1,3 +1,5 @@
+//6.1——货币转换器，使用MVC架构设计
+// 视图层 (View): 负责用户界面和交互
 package view;
 
 import controller.CurrencyController;
