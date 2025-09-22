@@ -6,8 +6,8 @@
 
 /*  按钮样式 */
 .button {
-    -fx-background-color: #4CAF50;
-    -fx-text-fill: white;
-    -fx-padding: 10px;
-    -fx-background-radius: 5px;
+    -fx-background-color: #4CAF50; /* 绿色背景 */
+    -fx-text-fill: white;  /* 白色文字 */
+    -fx-padding: 10px; /* 内边距 */
+    -fx-background-radius: 5px; /* 圆角 */
 }

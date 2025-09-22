@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>Assignment6.2</artifactId>
+    <artifactId>Assignment6.3</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -14,23 +14,19 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <!-- 添加 JUnit 依赖 -->
     <dependencies>
         <dependency> <groupId>org.openjfx</groupId> <artifactId>javafx</artifactId> <version>20.0.1</version> <type>pom</type> </dependency>
         <dependency> <groupId>org.openjfx</groupId> <artifactId>javafx-graphics</artifactId> <version>20.0.1</version> </dependency>
         <dependency> <groupId>org.openjfx</groupId> <artifactId>javafx-fxml</artifactId> <version>20.0.1</version> </dependency>
         <dependency> <groupId>org.openjfx</groupId> <artifactId>javafx-controls</artifactId> <version>20.0.1</version> </dependency>
     </dependencies>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.openjfx</groupId>
-                <artifactId>javafx-maven-plugin</artifactId>
-                <version>0.0.8</version>
-                <configuration>
-                    <mainClass>view.CurrencyView</mainClass>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+
+   <!--
+    在 IntelliJ IDEA 里运行：可以不写 <build>，程序依旧能跑。
+    在命令行里运行：必须要写 <build> 和 <mainClass>，否则报错。
+    运行命令：mvn clean javafx:run
+    -->
+
 
 </project>
