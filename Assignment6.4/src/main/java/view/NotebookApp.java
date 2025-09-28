@@ -1,3 +1,9 @@
+/* 6.4 Notebook Application
+ Create a simple JavaFX application that allows users to create, view, and delete notes.
+ Each note should have a title and content. Use a ListView to display the list of notes and a TextArea for the content.
+ Implement functionality to add new notes, view existing notes, and delete notes.
+*/
+
 package view;
 
 import javafx.application.Application;
