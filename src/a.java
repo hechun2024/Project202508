@@ -75,6 +75,7 @@
 //}
 
 //-----------------------------------------------------------------------------
+/*
 import java.io.*;
 
 public class a {
@@ -100,3 +101,29 @@ public class a {
         }
     }
 }
+*/
+class MyClass {
+    void sayHello() {
+        System.out.println("Hello");
+    }
+}
+
+public class a {
+    public static void main(String[] args) {
+        MyClass obj = new MyClass();
+
+        // Even though MyClass doesn't extend anything explicitly,
+        // it still inherits methods from Object
+        System.out.println(obj.toString());  // from Object
+        System.out.println(obj.hashCode());  // from Object
+        System.out.println(obj.equals(obj)); // from Object
+    }
+}
+/*  上面例子表示，如果一个类没有显式地继承任何其他类，它会 隐式地继承 Object 类。
+Q: Java 中所有类的父类是谁？
+A: java.lang.Object。
+Q: Object 提供了哪些常用方法？
+A: toString(), equals(), hashCode(), clone(), finalize(), getClass(), wait(), notify(), notifyAll() 等
+*/
+
+//-----------------------------------------------------------------------------
