@@ -7,13 +7,11 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * DAO class for accessing currency data.
- */
 public class CurrencyDao {
 
-    public List<Currency> getAllCurrencies() {
-        List<Currency> currencies = new ArrayList<>();
+    // 获取所有货币
+    public List<Currency> getAllCurrencies() throws SQLException {
+        List<Currency> list = new ArrayList<>();
         String sql = "SELECT * FROM Currency";
 
         try (Connection conn = MariaDbConnection.getConnection();
@@ -21,18 +19,28 @@ public class CurrencyDao {
              ResultSet rs = stmt.executeQuery(sql)) {
 
             while (rs.next()) {
-                currencies.add(new Currency(
+                list.add(new Currency(
                         rs.getInt("id"),
                         rs.getString("abbreviation"),
                         rs.getString("name"),
                         rs.getDouble("rate_to_usd")
                 ));
             }
-
-        } catch (SQLException e) {
-            System.err.println("Error fetching currencies.");
-            e.printStackTrace();
         }
-        return currencies;
+        return list;
+    }
+
+    // 获取某货币的汇率
+    public double getExchangeRate(String abbreviation) throws SQLException {
+        String sql = "SELECT rate_to_usd FROM Currency WHERE abbreviation = ?";
+        try (Connection conn = MariaDbConnection.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, abbreviation);
+            ResultSet rs = pstmt.executeQuery();
+            if (rs.next()) {
+                return rs.getDouble("rate_to_usd");
+            }
+        }
+        throw new SQLException("Currency not found: " + abbreviation);
     }
 }

@@ -1,18 +1,18 @@
-//7.2 currrency converter connect to mariadb
 package model;
 
 import dao.CurrencyDao;
 import entity.Currency;
-
+import java.sql.SQLException;
 import java.util.List;
 
-//会调用 dao，获取一堆 entity，然后提供给 view 使用。
- // Model layer: provides currency data to the View.
-
 public class CurrencyModel {
-    private CurrencyDao dao = new CurrencyDao();
+    private final CurrencyDao currencyDao = new CurrencyDao();
 
-    public List<Currency> getCurrencies() {
-        return dao.getAllCurrencies();
+    public List<Currency> getCurrencies() throws SQLException {
+        return currencyDao.getAllCurrencies();
+    }
+
+    public double getExchangeRate(String abbreviation) throws SQLException {
+        return currencyDao.getExchangeRate(abbreviation);
     }
 }
