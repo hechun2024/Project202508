@@ -7,7 +7,7 @@
 package view;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
+import javafx.fxml.FXMLLoader;  //FXMLLoader 的作用：把 FXML 文件 → 转换成 JavaFX 界面对象（Scene Graph） → 并自动连接 Controller。
 import javafx.scene.Scene;
 import javafx.scene.Parent;
 import javafx.stage.Stage;
@@ -18,7 +18,8 @@ public class NotebookApp extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        // Load the FXML file created in SceneBuilder
+        // Load the FXML file created in SceneBuilder 加载 UI 布局
+        //这行代码会读取 notebook_view.fxml，根据里面的标签自动创建界面控件，并返回根节点 Parent。
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/notebook_view.fxml"));
         Parent root = loader.load();
 
