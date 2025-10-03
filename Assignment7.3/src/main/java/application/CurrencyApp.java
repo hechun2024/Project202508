@@ -1,3 +1,4 @@
+//7.3 应用程序入口
 package application;
 
 import ui.CurrencyUI;

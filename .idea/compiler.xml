@@ -13,6 +13,7 @@
         <module name="Assignment6.2" />
         <module name="Assignment7.1" />
         <module name="Assignment6.1" />
+        <module name="Assignment7.4" />
       </profile>
     </annotationProcessing>
   </component>

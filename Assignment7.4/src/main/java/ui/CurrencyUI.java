@@ -1,7 +1,9 @@
 package ui;
 
 import dao.CurrencyDao;
+import dao.TransactionDao;
 import entity.Currency;
+import entity.Transaction;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
@@ -59,6 +61,12 @@ public class CurrencyUI extends Application {
                     // 计算：金额 * (目标汇率 / 源汇率)
                     double converted = amount * (cTo.getRateToUsd() / cFrom.getRateToUsd());
                     resultLabel.setText(String.format("%.2f %s", converted, to));
+
+                    ////// 保存交易
+                    Transaction tx = new Transaction(amount, converted, cFrom, cTo);
+                    TransactionDao txDao = new TransactionDao();
+                    txDao.addTransaction(tx);
+
                 } else {
                     resultLabel.setText("Currency not found!");
                 }

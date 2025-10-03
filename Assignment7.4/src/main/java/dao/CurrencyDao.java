@@ -1,9 +1,9 @@
-//7.3 数据访问层（操作数据库）
+//7.4 数据访问层（操作数据库）
 package dao;
 
-import entity.Currency;
 import datasource.MariaDbJpaConnection;
-import jakarta.persistence.EntityManager;  //EntityManager = 管理实体对象和数据库的桥梁
+import entity.Currency;
+import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 
 import java.util.List;

@@ -7,8 +7,11 @@
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/05b1ca2e-8ccb-41ab-916b-2e4ac05b5923/console.sql" value="05b1ca2e-8ccb-41ab-916b-2e4ac05b5923" />
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/05b1ca2e-8ccb-41ab-916b-2e4ac05b5923/console_1.sql" value="05b1ca2e-8ccb-41ab-916b-2e4ac05b5923" />
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/05b1ca2e-8ccb-41ab-916b-2e4ac05b5923/console_2.sql" value="05b1ca2e-8ccb-41ab-916b-2e4ac05b5923" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/05b1ca2e-8ccb-41ab-916b-2e4ac05b5923/console_3.sql" value="05b1ca2e-8ccb-41ab-916b-2e4ac05b5923" />
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/23a09097-3912-4b7b-a40b-a292ce09a5c8/console.sql" value="23a09097-3912-4b7b-a40b-a292ce09a5c8" />
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/23a09097-3912-4b7b-a40b-a292ce09a5c8/console_1.sql" value="23a09097-3912-4b7b-a40b-a292ce09a5c8" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/74d49c72-a624-40b4-95f8-db71aa2df84c/console.sql" value="74d49c72-a624-40b4-95f8-db71aa2df84c" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/74d49c72-a624-40b4-95f8-db71aa2df84c/console_1.sql" value="74d49c72-a624-40b4-95f8-db71aa2df84c" />
     <file url="das://23a09097-3912-4b7b-a40b-a292ce09a5c8/user/hechun@&amp;at;localhost.sql" value="23a09097-3912-4b7b-a40b-a292ce09a5c8" />
   </component>
 </project>
