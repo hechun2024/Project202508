@@ -1,4 +1,4 @@
-/**8.1_task2
+/**8.1_task2 test:
  * Test class for StringManipulator.
  * This class contains unit tests for each method in the StringManipulator class.
  */
