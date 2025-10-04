@@ -1,4 +1,4 @@
-/** 8.1_2 design a StringManipulator class
+/** 8.1_task2 design a StringManipulator class
  * StringManipulator.java
  *
  * This class provides various string manipulation methods such as concatenation,

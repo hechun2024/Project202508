@@ -1,4 +1,4 @@
-/** 8.1_1 design a Pen class
+/** 8.1_task1 design a Pen class
  * Pen 类表示一种可以绘画的笔，具有颜色和笔帽状态。
  * 只有在笔帽盖上时才能更换颜色，只有在笔帽打开时才能绘画。
  */
